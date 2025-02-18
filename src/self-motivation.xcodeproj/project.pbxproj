@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		5D23CC062D4F03A80044B435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E131B12D3D6C230066375C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E131B82D3D6C230066375C;
+			remoteInfo = "self-motivation";
+		};
+		5D23CC152D4F03DE0044B435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E131B12D3D6C230066375C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E131B82D3D6C230066375C;
+			remoteInfo = "self-motivation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D23CC022D4F03A80044B435 /* self-motivation-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "self-motivation-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D23CC0F2D4F03DE0044B435 /* self-motivation-ui-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "self-motivation-ui-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E131B92D3D6C230066375C /* Quick Motivation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Motivation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5D23CBE42D4D37C40044B435 /* Exceptions for "self-motivation" folder in "self-motivation" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 60E131B82D3D6C230066375C /* self-motivation */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5D23CC032D4F03A80044B435 /* self-motivation-tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "self-motivation-tests";
+			sourceTree = "<group>";
+		};
+		5D23CC102D4F03DE0044B435 /* self-motivation-ui-tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "self-motivation-ui-tests";
+			sourceTree = "<group>";
+		};
+		60E131BB2D3D6C230066375C /* self-motivation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5D23CBE42D4D37C40044B435 /* Exceptions for "self-motivation" folder in "self-motivation" target */,
+			);
+			path = "self-motivation";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D23CBFF2D4F03A80044B435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D23CC0C2D4F03DE0044B435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E131B62D3D6C230066375C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60E131B02D3D6C230066375C = {
+			isa = PBXGroup;
+			children = (
+				60E131BB2D3D6C230066375C /* self-motivation */,
+				5D23CC032D4F03A80044B435 /* self-motivation-tests */,
+				5D23CC102D4F03DE0044B435 /* self-motivation-ui-tests */,
+				60E131BA2D3D6C230066375C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60E131BA2D3D6C230066375C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60E131B92D3D6C230066375C /* Quick Motivation.app */,
+				5D23CC022D4F03A80044B435 /* self-motivation-tests.xctest */,
+				5D23CC0F2D4F03DE0044B435 /* self-motivation-ui-tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D23CC012D4F03A80044B435 /* self-motivation-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D23CC082D4F03A80044B435 /* Build configuration list for PBXNativeTarget "self-motivation-tests" */;
+			buildPhases = (
+				5D23CBFE2D4F03A80044B435 /* Sources */,
+				5D23CBFF2D4F03A80044B435 /* Frameworks */,
+				5D23CC002D4F03A80044B435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D23CC072D4F03A80044B435 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5D23CC032D4F03A80044B435 /* self-motivation-tests */,
+			);
+			name = "self-motivation-tests";
+			packageProductDependencies = (
+			);
+			productName = "self-motivation-tests";
+			productReference = 5D23CC022D4F03A80044B435 /* self-motivation-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D23CC0E2D4F03DE0044B435 /* self-motivation-ui-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D23CC172D4F03DE0044B435 /* Build configuration list for PBXNativeTarget "self-motivation-ui-tests" */;
+			buildPhases = (
+				5D23CC0B2D4F03DE0044B435 /* Sources */,
+				5D23CC0C2D4F03DE0044B435 /* Frameworks */,
+				5D23CC0D2D4F03DE0044B435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D23CC162D4F03DE0044B435 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5D23CC102D4F03DE0044B435 /* self-motivation-ui-tests */,
+			);
+			name = "self-motivation-ui-tests";
+			packageProductDependencies = (
+			);
+			productName = "self-motivation-ui-tests";
+			productReference = 5D23CC0F2D4F03DE0044B435 /* self-motivation-ui-tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		60E131B82D3D6C230066375C /* self-motivation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E131E02D3D6C240066375C /* Build configuration list for PBXNativeTarget "self-motivation" */;
+			buildPhases = (
+				60E131B52D3D6C230066375C /* Sources */,
+				60E131B62D3D6C230066375C /* Frameworks */,
+				60E131B72D3D6C230066375C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				60E131BB2D3D6C230066375C /* self-motivation */,
+			);
+			name = "self-motivation";
+			packageProductDependencies = (
+			);
+			productName = "self-motivation";
+			productReference = 60E131B92D3D6C230066375C /* Quick Motivation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60E131B12D3D6C230066375C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					5D23CC012D4F03A80044B435 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 60E131B82D3D6C230066375C;
+					};
+					5D23CC0E2D4F03DE0044B435 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 60E131B82D3D6C230066375C;
+					};
+					60E131B82D3D6C230066375C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 60E131B42D3D6C230066375C /* Build configuration list for PBXProject "self-motivation" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60E131B02D3D6C230066375C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 60E131BA2D3D6C230066375C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60E131B82D3D6C230066375C /* self-motivation */,
+				5D23CC012D4F03A80044B435 /* self-motivation-tests */,
+				5D23CC0E2D4F03DE0044B435 /* self-motivation-ui-tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D23CC002D4F03A80044B435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D23CC0D2D4F03DE0044B435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E131B72D3D6C230066375C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D23CBFE2D4F03A80044B435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D23CC0B2D4F03DE0044B435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E131B52D3D6C230066375C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D23CC072D4F03A80044B435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E131B82D3D6C230066375C /* self-motivation */;
+			targetProxy = 5D23CC062D4F03A80044B435 /* PBXContainerItemProxy */;
+		};
+		5D23CC162D4F03DE0044B435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E131B82D3D6C230066375C /* self-motivation */;
+			targetProxy = 5D23CC152D4F03DE0044B435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D23CC092D4F03A80044B435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4HT75JP4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matthewmanela.self-motivation-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Motivation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quick Motivation";
+			};
+			name = Debug;
+		};
+		5D23CC0A2D4F03A80044B435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4HT75JP4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matthewmanela.self-motivation-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Motivation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quick Motivation";
+			};
+			name = Release;
+		};
+		5D23CC182D4F03DE0044B435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4HT75JP4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matthewmanela.self-motivation-ui-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "self-motivation";
+			};
+			name = Debug;
+		};
+		5D23CC192D4F03DE0044B435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4HT75JP4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "matthewmanela.self-motivation-ui-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "self-motivation";
+			};
+			name = Release;
+		};
+		60E131DE2D3D6C240066375C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60E131DF2D3D6C240066375C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		60E131E12D3D6C240066375C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "self-motivation/self_motivation.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"self-motivation/Preview Content\"";
+				DEVELOPMENT_TEAM = W4HT75JP4U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "self-motivation/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quick Motivation";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025, Matthew Manela. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewmanela.selfmotivation;
+				PRODUCT_NAME = "Quick Motivation";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		60E131E22D3D6C240066375C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "self-motivation/self_motivation.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"self-motivation/Preview Content\"";
+				DEVELOPMENT_TEAM = W4HT75JP4U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "self-motivation/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quick Motivation";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025, Matthew Manela. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewmanela.selfmotivation;
+				PRODUCT_NAME = "Quick Motivation";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D23CC082D4F03A80044B435 /* Build configuration list for PBXNativeTarget "self-motivation-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D23CC092D4F03A80044B435 /* Debug */,
+				5D23CC0A2D4F03A80044B435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D23CC172D4F03DE0044B435 /* Build configuration list for PBXNativeTarget "self-motivation-ui-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D23CC182D4F03DE0044B435 /* Debug */,
+				5D23CC192D4F03DE0044B435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E131B42D3D6C230066375C /* Build configuration list for PBXProject "self-motivation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E131DE2D3D6C240066375C /* Debug */,
+				60E131DF2D3D6C240066375C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E131E02D3D6C240066375C /* Build configuration list for PBXNativeTarget "self-motivation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E131E12D3D6C240066375C /* Debug */,
+				60E131E22D3D6C240066375C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60E131B12D3D6C230066375C /* Project object */;
+}
