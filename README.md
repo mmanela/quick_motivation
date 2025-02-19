@@ -3,7 +3,7 @@
 
 Quick Motivation is a simple app that adds a menu bar item with customizable messages. Keeping a message visible helps interrupt distracting thought patterns and refocuses your attention on what matters.
 
-[![image](https://github.com/user-attachments/assets/a5cc84aa-dd31-4cec-abd5-d369184fe277)](https://apps.apple.com/us/app/quick-motivation/id6741396236)
+[<img width="237" alt="image" src="https://github.com/user-attachments/assets/a5cc84aa-dd31-4cec-abd5-d369184fe277" />](https://apps.apple.com/us/app/quick-motivation/id6741396236)
 
 
 ## Support
