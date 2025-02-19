@@ -12,11 +12,12 @@ If you encounter any problems or have suggestions, please file an issue.
 ## How It Works
 If you sometimes get so passionate about a topic that you forget to breathe, you can ping a menu bar item like this:
 
-![Motivation Example 1](https://github.com/user-attachments/assets/83136ee3-a420-4762-ba33-2aec07b1c681)
+<img width="506" alt="image" src="https://github.com/user-attachments/assets/49b465ab-08a7-4699-b6e0-1e203249a99a" />
 
 Alternatively, if you need a reminder to stay focused and get work done, set this as a reminder to yourself:
 
-![Motivation Example 2](https://github.com/user-attachments/assets/2004a00e-11f6-4faf-85ec-4f7e864e43fb)
+<img width="499" alt="image" src="https://github.com/user-attachments/assets/d4e55737-d506-4986-a3fc-c223cefacb6d" />
+
 
 The app lets you configure and quickly choose between motivational messages.
 
