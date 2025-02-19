@@ -6,6 +6,9 @@ Quick Motivation is a simple app that adds a menu bar item with customizable mes
 [<img width="237" alt="image" src="https://github.com/user-attachments/assets/a5cc84aa-dd31-4cec-abd5-d369184fe277" />](https://apps.apple.com/us/app/quick-motivation/id6741396236)
 
 
+## Links
+- [Blog post](https://matthewmanela.com/blog/quick-motivation-a-mac-app/)
+
 ## Support
 If you encounter any problems or have suggestions, please file an issue.
 
