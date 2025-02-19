@@ -476,7 +476,7 @@
 				CODE_SIGN_ENTITLEMENTS = "self-motivation/self_motivation.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"self-motivation/Preview Content\"";
 				DEVELOPMENT_TEAM = W4HT75JP4U;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -492,7 +492,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewmanela.selfmotivation;
 				PRODUCT_NAME = "Quick Motivation";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -508,7 +508,7 @@
 				CODE_SIGN_ENTITLEMENTS = "self-motivation/self_motivation.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"self-motivation/Preview Content\"";
 				DEVELOPMENT_TEAM = W4HT75JP4U;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -524,7 +524,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewmanela.selfmotivation;
 				PRODUCT_NAME = "Quick Motivation";
 				SWIFT_EMIT_LOC_STRINGS = YES;
