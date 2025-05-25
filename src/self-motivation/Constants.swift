@@ -12,6 +12,8 @@ let MAX_MESSAGE_LENGTH = 50
 let PINNED_MESSAGE_KEY = "pinnedMessageId"
 let CUSTOM_MESSAGES_KEY = "customMessages"
 let MENUBAR_ONLY_EMOJI = "onlyRenderEmojiInMenuBar"
+let AUTO_ROTATE_ENABLED_KEY = "autoRotateEnabled"
+let ROTATION_DURATION_KEY = "rotationDuration"
 
 let fixedUUID1 = UUID(uuidString: "788453fc-eb50-454c-a7c4-1c6f40e34422")
 let fixedUUID2 = UUID(uuidString: "0fbcb346-9192-4cd2-92b2-63c16344c917")
