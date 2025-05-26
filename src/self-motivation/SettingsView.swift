@@ -198,7 +198,7 @@ struct SettingsView: View {
             .frame(height: 25)
         }
         .padding()
-        .frame(minWidth: 500, minHeight: 400)
+        .frame(minWidth: 525, minHeight: 400)
         .onAppear {
             updateSelectedDurationFromStorage()
         }

@@ -18,6 +18,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     @AppStorage(CUSTOM_MESSAGES_KEY) private var customMessages: [MessageItem] = DEFAULT_CUSTOM_MESSAGES
     @AppStorage(PINNED_MESSAGE_KEY) private var pinnedMessageId: String = DEFAULT_CUSTOM_MESSAGES[0].id
     @AppStorage(MENUBAR_ONLY_EMOJI) private var onlyRenderEmojiInMenuBar: Bool = false
+    @AppStorage(AUTO_ROTATE_ENABLED_KEY) private var autoRotateEnabled: Bool = false
+    @AppStorage(ROTATION_DURATION_KEY) private var rotationDuration: Int = 5
     private var statusItem: NSStatusItem!
     private var observer: NSObjectProtocol!
     var settingsWindow: NSWindow?
@@ -30,6 +32,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     let displayName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
     private var occlusionEventDebounceTimer: Timer?
     private var lastOnlyRenderEmojiInMenuBar: Bool = false
+    private var rotationTimer: Timer?
+    private var lastAutoRotateEnabled: Bool = false
+    private var lastRotationDuration: Int = 5
     
     static var isTesting: Bool {
         return ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
@@ -45,6 +50,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     deinit {
         // Remove observer when the app is deinitialized
         NotificationCenter.default.removeObserver(observer!)
+        rotationTimer?.invalidate()
     }
     
     func applicationDidFinishLaunching(_ notification: Notification) {
@@ -61,6 +67,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         
         popover = MotivationalPopover(viewToAnchorTo: self.statusItem.button!)
         popover?.updatePopoverText(with: String(describing: getPinnedMessage()))
+        
+        lastAutoRotateEnabled = autoRotateEnabled
+        lastRotationDuration = rotationDuration
+        setupRotationTimer()
     }
     
     func isStatusItemVisible() -> Bool {
@@ -166,7 +176,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         // Dropdown menu items
         var i = 0
         for message in customMessages {
-            let item = NSMenuItem(title: String(describing: message), action: #selector(changeMessage(_:)), keyEquivalent: String(i))
+            let item = NSMenuItem(title: String(describing: message), action: #selector(changeMessageHandler(_:)), keyEquivalent: String(i))
             item.representedObject = message
             menu.addItem(item)
             i = i + 1
@@ -208,13 +218,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         }
     }
     
-    @objc func changeMessage(_ sender: NSMenuItem) {
+    fileprivate func changeMessage(_ item: MessageItem) {
+        pinnedMessageId = item.id
+        renderFullPinnedMessage()
+        if self.popover?.isPopoverPinned == true {
+            popover?.showPopoverWithDelay()
+        }
+    }
+    
+    @objc func changeMessageHandler(_ sender: NSMenuItem) {
         if let item = sender.representedObject as? MessageItem {
-            pinnedMessageId = item.id
-            renderFullPinnedMessage()
-            if self.popover?.isPopoverPinned == true {
-                popover?.showPopoverWithDelay()
-            }
+            changeMessage(item)
         }
     }
     
@@ -222,6 +236,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     @objc func userDefaultsChanged(notification: Notification) {
         renderFullPinnedMessage()
         setupMenuList()
+        
+        // Only reset rotation timer if rotation settings actually changed
+        if autoRotateEnabled != lastAutoRotateEnabled || rotationDuration != lastRotationDuration {
+            debugPrint("userDefaultsChanged: Rotation configuration changed autoRotateEnabled:\(lastAutoRotateEnabled) -> \(autoRotateEnabled), rotationDuration: \(lastRotationDuration) -> \(rotationDuration)")
+            lastAutoRotateEnabled = autoRotateEnabled
+            lastRotationDuration = rotationDuration
+            setupRotationTimer()
+        }
     }
     
     @objc func showSettings() {
@@ -264,5 +286,34 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         aboutWindow?.makeKeyAndOrderFront(nil)
         NSApplication.shared.activate(ignoringOtherApps: true)
         
+    }
+    
+    private func setupRotationTimer() {
+        rotationTimer?.invalidate()
+        rotationTimer = nil
+        
+        guard autoRotateEnabled && rotationDuration > 0 && !customMessages.isEmpty else {
+            return
+        }
+        
+        let timeInterval = TimeInterval(rotationDuration * 60) // Convert minutes to seconds
+        
+        debugPrint("setupRotationTimer: setting up with rotationDuration: \(rotationDuration) minutes")
+        rotationTimer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) { [weak self] _ in
+            if(self != nil) {
+                debugPrint("setupRotationTimer: rotation timer invoked after \(self!.rotationDuration) minutes")
+            }
+            self?.rotateToNextMessage()
+        }
+    }
+    
+    private func rotateToNextMessage() {
+        guard !customMessages.isEmpty else { return }
+        
+        let currentIndex = customMessages.firstIndex { $0.id == pinnedMessageId } ?? 0
+        let nextIndex = (currentIndex + 1) % customMessages.count
+        let nextMessage = customMessages[nextIndex]
+     
+        changeMessage(nextMessage)
     }
 }
