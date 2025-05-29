@@ -246,6 +246,9 @@ struct SettingsView: View {
             rotationDuration = selectedDuration.minutes
         } else if customMinutes.isEmpty {
             customMinutes = "1"
+            rotationDuration = 1
+        } else if let minutes = Int(customMinutes) {
+            rotationDuration = minutes
         }
     }
 }
