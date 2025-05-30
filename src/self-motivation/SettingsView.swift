@@ -158,13 +158,13 @@ struct SettingsView: View {
                         }
                     }
                     .pickerStyle(MenuPickerStyle())
-                    .frame(width: 120)
+                    .frame(width: 115)
                     .padding(.leading, -5)
                     
                     if selectedDuration == .custom {
                         HStack(spacing: 4) {
                             TextField("Minutes", text: $customMinutes)
-                                .frame(width: 80)
+                                .frame(width: 60)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 5)
@@ -197,8 +197,8 @@ struct SettingsView: View {
             .padding(.horizontal)
             .frame(height: 25)
         }
-        .padding()
-        .frame(minWidth: 525, minHeight: 400)
+        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+        .frame(minWidth: 550, minHeight: 400)
         .onAppear {
             updateSelectedDurationFromStorage()
         }
